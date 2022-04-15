@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item:not(:last-child) {
+    margin-right: 30px;
+}
+.text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;    
+}
+.textTutorInfo {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    margin-right: 8px;
+}

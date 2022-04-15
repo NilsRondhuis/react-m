@@ -1,11 +1,12 @@
+import './Navigation.scss';
 import { navConfig } from "../../data/navigation";
 import NavItem from "./NavItem/NavItem";
 
 const Navigation = () => {
     return (
-        <nav>
-           {navConfig.map(({name}, i) => (
-               <NavItem key={i} name={name}/>
+        <nav className='Navigation'>
+           {navConfig.map(({name, icon}, i) => (
+               <NavItem key={i} name={name} icon={icon}/>
            ))}
         </nav>
     );

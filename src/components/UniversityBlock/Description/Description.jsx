@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import s from './Description.module.css';
 
 const Description = ({ descriptions }) => {
     return (
         <>
-        <p>{descriptions}</p>
+        <p className={s.text}>{descriptions}</p>
         </>
     );
 }; 

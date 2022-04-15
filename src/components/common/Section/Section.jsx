@@ -1,9 +1,17 @@
+/** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
+
+const sectionStyle = {
+    paddingBottom: 30,
+}
 
 const Section = ({ text, icon, children }) => {
     return (
-        <section>
-            <h2><span><img src={icon} alt="Icon Title" /></span> {text}</h2>
+        <section css={sectionStyle}>
+            <div className="header">
+                <span className="icon"><img src={icon} alt="icon" /></span>
+                <h2 className='heading'>{text}</h2>
+            </div>
             {children}
         </section>
     );

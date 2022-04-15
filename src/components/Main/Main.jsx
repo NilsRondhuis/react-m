@@ -10,13 +10,13 @@ import iconLocal from '../../images/icons/local.png';
 import faculties from '../../data/faculties.json'
 import universityInfo from "../../data/universityInfo.json";
 import cities from '../../data/cities.json';
+import s from './Main.module.css';
 
 const { tutors } = universityInfo;
 
 const Main = () => {
     return (
-        <main>
-            Main
+        <main className={s.main}>
             <Header title='Информация о университете'/>
             <UniversityBlock/>
             <Section text="Преподаватели" icon={iconCat}>
